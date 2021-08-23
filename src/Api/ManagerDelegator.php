@@ -46,7 +46,7 @@ class ManagerDelegator extends \Omeka\Api\Manager
         }
 
         if (empty($options['index']) && empty($data['index'])) {
-            // @see \AdvancedSearchPlus\Api\ManagerDelegator::search()
+            /** @see \AdvancedSearchPlus\Api\ManagerDelegator::search() */
             if ($this->hasAdvancedSearchPlus
                 // Use the standard process when possible.
                 && array_key_exists('initialize', $options)

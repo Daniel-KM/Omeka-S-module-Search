@@ -180,7 +180,7 @@ class SearchPageConfigureForm extends Form
                 'options' => [
                     'label' => 'Limit query to specific fields', // @translate
                     'value_options' => $availableFields,
-                    'empty_value' => '',
+                    'empty_option' => '',
                 ],
                 'attributes' => [
                     'id' => 'autosuggest_fields',
