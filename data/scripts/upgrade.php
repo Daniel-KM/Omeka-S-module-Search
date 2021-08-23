@@ -127,7 +127,7 @@ if (version_compare($oldVersion, '3.5.8', '<')) {
     $sql = <<<'SQL'
 SELECT `id`, `settings` FROM `search_page`;
 SQL;
-    $stmt = $connection->query($sql);
+    $stmt = $connection->executeQuery($sql);
     $result = $stmt->fetchAll(\PDO::FETCH_KEY_PAIR);
     if ($result) {
         foreach ($result as $id => $searchPageSettings) {
@@ -218,7 +218,7 @@ if (version_compare($oldVersion, '3.5.14', '<')) {
     $sql = <<<'SQL'
 SELECT `id`, `settings` FROM `search_page`;
 SQL;
-    $stmt = $connection->query($sql);
+    $stmt = $connection->executeQuery($sql);
     $result = $stmt->fetchAll(\PDO::FETCH_KEY_PAIR);
     if ($result) {
         foreach ($result as $id => $searchPageSettings) {
@@ -263,7 +263,7 @@ if (version_compare($oldVersion, '3.5.21.3', '<')) {
     $sql = <<<'SQL'
 SELECT `id`, `form_adapter`, `settings` FROM `search_page`;
 SQL;
-    $stmt = $connection->query($sql);
+    $stmt = $connection->executeQuery($sql);
     $results = $stmt->fetchAll();
     foreach ($results as $result) {
         $id = $result['id'];
@@ -394,7 +394,7 @@ SQL;
         'sort' => [],
         'facet' => [],
     ];
-    $stmt = $connection->query($sql);
+    $stmt = $connection->executeQuery($sql);
     $results = $stmt->fetchAll();
     foreach ($results as $result) {
         $id = $result['id'];
