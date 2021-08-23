@@ -82,6 +82,18 @@ class Module extends AbstractModule
         $this->addRoutes();
     }
 
+    protected function preInstall(): void
+    {
+        $messenger = new Messenger;
+        $message = new Message(
+            'This module is deprecated and has been superceded by %sAdvanced Search%s. The upgrade from it is automatic.', // @translate
+            '<a href="https://gitlab.com/Daniel-KM/Omeka-S-module-AdvancedSearch" target="_blank">',
+            '</a>'
+        );
+        $message->escapeHtml(false);
+        $messenger->addWarning($message);
+    }
+
     protected function postInstall(): void
     {
         $messenger = new Messenger;

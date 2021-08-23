@@ -428,3 +428,14 @@ SQL;
         $connection->exec($sql);
     }
 }
+
+if (version_compare($oldVersion, '3.5.25.3', '<')) {
+    $messenger = new Messenger;
+    $message = new Message(
+        'This module is deprecated and has been superceded by %sAdvanced Search%s. The upgrade from it is automatic.', // @translate
+        '<a href="https://gitlab.com/Daniel-KM/Omeka-S-module-AdvancedSearch" target="_blank">',
+        '</a>'
+    );
+    $message->escapeHtml(false);
+    $messenger->addWarning($message);
+}

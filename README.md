@@ -1,6 +1,9 @@
 Search (module for Omeka S)
 ===========================
 
+> ***IMPORTANT***: This module is deprecated and has been replaced by the module
+> [Advanced Search] and won’t be updated any more. The upgrade from it is automatic.
+
 > __New versions of this module and support for Omeka S version 3.0 and above
 > are available on [GitLab], which seems to respect users and privacy better
 > than the previous repository.__
@@ -301,7 +304,8 @@ were done for various projects. The auto-completion was build for future digital
 library of [Campus Condorcet].
 
 
-[Search]: https://github.com/BibLibre/Omeka-S-module-Search
+[Advanced Search]: https://gitlab.com/Daniel-KM/Omeka-S-module-AdvancedSearch
+[Search]: https://gitlab.com/Daniel-KM/Omeka-S-module-Search
 [Omeka S]: https://omeka.org/s
 [Psl Search Form]: https://github.com/BibLibre/Omeka-S-module-PslSearchForm
 [Solr]: https://gitlab.com/Daniel-KM/Omeka-S-module-SearchSolr
@@ -313,7 +317,7 @@ library of [Campus Condorcet].
 [Advanced Search Plus]: https://gitlab.com/Daniel-KM/Omeka-S-module-AdvancedSearchPlus
 [Solr of Biblibre]: https://github.com/BibLibre/Omeka-S-module-Solr
 [Browse preview]: https://omeka.org/s/docs/user-manual/sites/site_pages/#browse-preview
-[module issues]: https://github.com/BibLibre/Omeka-S-module-Search/issues
+[module issues]: https://gitlab.com/Daniel-KM/Omeka-S-module-Search/issues
 [CeCILL v2.1]: https://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html
 [GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html
 [FSF]: https://www.fsf.org
