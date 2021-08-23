@@ -385,19 +385,19 @@ SQL;
                 continue;
             }
             foreach ($filterValues as $filterValue) {
-                $start = $filterValue['start'] ? $filterValue['start'] : '*';
-                $end = $filterValue['end'] ? $filterValue['end'] : '*';
+                $from = $filterValue['from'] ? $filterValue['from'] : '*';
+                $to = $filterValue['to'] ? $filterValue['to'] : '*';
                 $this->args['property'][] = [
                     'joiner' => 'and',
                     'property' => 'dcterms:date',
                     'type' => 'gte',
-                    'text' => $start,
+                    'text' => $from,
                 ];
                 $this->args['property'][] = [
                     'joiner' => 'and',
                     'property' => 'dcterms:date',
                     'type' => 'lte',
-                    'text' => $end,
+                    'text' => $to,
                 ];
             }
         }
