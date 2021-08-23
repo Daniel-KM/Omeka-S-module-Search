@@ -242,8 +242,8 @@ return [
             'search_batch_size' => 100,
         ],
         'site_settings' => [
-            'search_main_page' => null,
-            'search_pages' => [],
+            'search_main_page' => 1,
+            'search_pages' => [1],
             'search_redirect_itemset' => true,
         ],
         'block_settings' => [
